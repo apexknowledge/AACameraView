@@ -323,7 +323,7 @@ extension AACameraView {
                 session.addMicInput(global.deviceAudio)
             }
             output = AVCaptureMovieFileOutput()
-            outputVideo!.movieFragmentInterval = kCMTimeInvalid
+            outputVideo!.movieFragmentInterval = CMTime.invalid
         }
         
         session.commitConfiguration()
